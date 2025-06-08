@@ -54,8 +54,8 @@ img {
     /* display: inline;   */
     padding: 1rem;
     border-radius: 1rem;
-    margin-left: 40rem;
-    margin-right: 40rem;
+    margin: 2rem auto;
+    max-width: 600px;
 }
 
 .score-board {
@@ -71,3 +71,49 @@ img {
     font-size: 4rem;
 }
 
+.msg-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#msg {
+    max-width: 90%;
+    width: 100%;
+}
+
+
+/*  Media queries for smaller screens  */
+
+
+@media (max-width: 768px) {
+    .choices {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .score-board {
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 1.5rem;
+    }
+
+    #user-score, #computer-score {
+        font-size: 3rem;
+    }
+
+    #msg {
+        margin: 2rem;
+        font-size: 1.5rem;
+    }
+}
